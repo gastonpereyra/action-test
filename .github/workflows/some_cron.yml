@@ -2,14 +2,8 @@ name: Some Cron
 
 on:
   schedule:
-    - cron: '* * * * *'
-
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Something?'
-        required: false
-        default: 'Errors'
+    - cron: "* * * * *"
+      
 jobs:
 
   complain:
@@ -18,4 +12,4 @@ jobs:
 
     steps:
     - name: complain
-      run: echo "${{ github.event.inputs.name }}. It never ENDS!!!!!! prayForMe"
+      run: echo "Errors. It never ENDS!!!!!! prayForMe"
