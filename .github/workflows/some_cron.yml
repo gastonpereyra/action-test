@@ -12,4 +12,4 @@ jobs:
 
     steps:
     - name: complain
-      run: echo "Errors. It never ENDS!!!!!! prayForMe"
+      run: echo "Errors, It never ENDS!!!!!! prayForMe"
