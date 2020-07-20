@@ -18,4 +18,4 @@ jobs:
 
     steps:
     - name: complain
-      run: echo "${{ github.event.inputs.name }}. It never ENDS!!!!!! #prayForMe"
+      run: echo "${{ github.event.inputs.name }}. It never ENDS!!!!!! prayForMe"
