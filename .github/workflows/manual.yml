@@ -1,22 +1,21 @@
-# This is a basic workflow that is manually triggered
-
 name: Some Cron
 
-# Controls when the action will run. Workflow runs when manually triggered using the UI
-# or API.
 on:
   schedule:
-    - cron: "*/5 * * * 1-5"
+    - cron: "* * * * *"
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Something?'
+        required: false
+        default: 'No, thanks'
 jobs:
-  # This workflow contains a single job called "greet"
-  greet:
-    # The type of runner that the job will run on
+
+  complain:
+
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Runs a single command using the runners shell
-    - name: Send greeting
+    - name: Complain
       run: echo "It never ENDS!!!!!! #prayForMe"
