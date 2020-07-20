@@ -2,14 +2,14 @@ name: Some Cron
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: '* * * * *'
 
   workflow_dispatch:
     inputs:
       name:
         description: 'Something?'
         required: false
-        default: 'No, thanks'
+        default: 'Errors'
 jobs:
 
   complain:
@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Complain
-      run: echo "It never ENDS!!!!!! #prayForMe"
+    - name: complain
+      run: echo "${{ github.event.inputs.name }}. It never ENDS!!!!!! #prayForMe"
