@@ -1,0 +1,36 @@
+{
+  "name": "action-test",
+  "version": "1.0.0",
+  "description": "Some tests to tries differents Actions",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "export TEST_ENV=true; mocha --exit --recursive tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gastonpereyra/action-test.git"
+  },
+  "keywords": [
+    "actions"
+  ],
+  "author": "Gastón Pereyra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gastonpereyra/action-test/issues"
+  },
+  "homepage": "https://github.com/gastonpereyra/action-test#readme",
+  "devDependencies": {
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "mocha": "^8.0.1",
+    "nyc": "^15.1.0",
+    "sinon": "^9.0.2"
+  },
+  "files": [
+    "lib/"
+  ],
+  "directories": {
+    "test": "tests"
+  }
+}
