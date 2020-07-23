@@ -2,9 +2,13 @@
   "name": "action-test",
   "version": "1.0.0",
   "description": "Some tests to tries differents Actions",
-  "main": "lib/index.js",
+  "main": "lib/says.js",
   "scripts": {
-    "test": "export TEST_ENV=true; mocha --exit --recursive tests/"
+    "test": "export TEST_ENV=true; mocha --exit --recursive tests/",
+    "coverage": "nyc npm test",
+    "lint": "eslint lib/ tests/",
+    "says": "node ./lib/says",
+    "think": "node ./lib/think"
   },
   "repository": {
     "type": "git",
@@ -32,5 +36,8 @@
   ],
   "directories": {
     "test": "tests"
+  },
+  "dependencies": {
+    "cowsay": "^1.4.0"
   }
 }
