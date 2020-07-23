@@ -2,7 +2,9 @@
   "exclude": [
     "tests/",
     "coverage/",
-    ".eslintrc.js"
+    ".eslintrc.js",
+    "lib/says.js",
+    "lib/think.js"
   ],
   "extension": [
     ".js"
