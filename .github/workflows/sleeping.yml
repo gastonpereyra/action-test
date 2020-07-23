@@ -2,7 +2,7 @@ name: Sleeping
 
 on:
   schedule:
-    - cron: "0 12-21 * * 1-5"
+    - cron: "0 0-12 * * *"
       
 jobs:
 
