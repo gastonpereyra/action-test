@@ -20,12 +20,16 @@ jobs:
 
   says:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     steps:
-    - name: Use Node.js 12.x
+    - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: 12.x
+        node-version: ${{ matrix.node-version }}
     - run: npm ci
     - name: Says something clever
       run: npm run says -- ${{ github.event.inputs.message }} ${{github.event.inputs.eyes}} ${{github.event.inputs.tongue}}
