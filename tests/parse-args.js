@@ -80,7 +80,7 @@ describe('Parse Args', () => {
 
 			assert.deepStrictEqual(parseArgs([undefined, undefined, '-d']), {
 				...validValues,
-				text: 'It\'s Wednesday, December 31, 1969 and I\'m still here..'
+				text: 'It\'s Thursday, January 1, 1970 and I\'m still here..'
 			});
 
 			clock.restore();
