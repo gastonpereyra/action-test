@@ -5,7 +5,9 @@
   "main": "lib/says.js",
   "scripts": {
     "test": "export TEST_ENV=true; mocha --exit --recursive tests/",
-    "says": "node .",
+    "coverage": "nyc npm test",
+    "lint": "eslint lib/ tests/",
+    "says": "node ./lib/says",
     "think": "node ./lib/think"
   },
   "repository": {
