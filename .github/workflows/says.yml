@@ -1,0 +1,31 @@
+name: Say Something
+
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Message'
+        default: 'mooooooooooooooooooooooooooo!'
+        required: false
+      eyes:
+        description: 'Type of eyes'
+        default: 'crazy'
+        required: false
+      tongue:
+        description: 'Type of tongue'
+        default: 'in'
+        required: false
+
+jobs:
+
+  says:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm ci
+    - name: Says something clever
+      run: npm run says -- ${{ github.event.inputs.message }} ${{github.event.inputs.eyes}} ${{github.event.inputs.tongue}}
