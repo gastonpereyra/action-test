@@ -6,6 +6,7 @@
   "scripts": {
     "test": "export TEST_ENV=true; mocha --exit --recursive tests/",
     "coverage": "nyc npm test",
+    "test-ci": "nyc npm test report --reporter=text-lcov",
     "lint": "eslint lib/ tests/",
     "says": "node ./lib/says",
     "think": "node ./lib/think"
