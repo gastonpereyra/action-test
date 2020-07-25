@@ -15,13 +15,13 @@
 ## :cow: Live at the Farm :video_camera:
 
 ```js
- _________________________________________________
-< It's Friday, July 24, 2020 and I'm still here.. >
- -------------------------------------------------
-        \   ^__^
-         \  (xx)\_______
+ ___________________
+( ZzzZzZzZzZzZZzzzz )
+ -------------------
+        o   ^__^
+         o  (--)\_______
             (__)\       )\/\
-             W ||----w |
+                ||----w |
                 ||     ||
 ```
 
@@ -63,7 +63,7 @@ There a few type of tongue
 | s    | `u` |
 | l    | `U` |
 | viper | `W` |
-| spike | `V' |
+| spike | `V` |
 | flu | `^^` |
 
 ### :x: Death
