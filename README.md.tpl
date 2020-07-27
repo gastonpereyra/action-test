@@ -14,6 +14,8 @@
 
 ## :cow: Live at the Farm :video_camera:
 
+> Last Time {{last_time}}
+
 ```js
 {{cow_last_action}}
 ```
