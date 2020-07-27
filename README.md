@@ -14,14 +14,14 @@
 
 ## :cow: Live at the Farm :video_camera:
 
-> Last Time 7/27/2020, 3:57:03 AM
+> Last Time 7/27/2020, 4:01:22 AM
 
 ```js
- ___________________________________
-< mooooooooooooooooooooooooooooooo! >
- -----------------------------------
-        \   ^__^
-         \  (oO)\_______
+ ___________________
+( ZzzZzZzZzZzZZzzzz )
+ -------------------
+        o   ^__^
+         o  (--)\_______
             (__)\       )\/\
                 ||----w |
                 ||     ||
